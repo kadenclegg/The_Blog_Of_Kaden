@@ -3,60 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Kaden Clegg</title>
-    <link rel="stylesheet" href="../styles/styles.css"> <!-- Bootstrap Theme -->
+    <title>Kaden Clegg - Resume</title>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .resume-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="../index.html">Kaden Clegg</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tableau.html">Dashboard</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+<!-- Resume Banner -->
+<div style="
+    position: relative; 
+    height: 400px; /* Taller rectangle to show more of the image */
+    background: url('../images/swiggie.jpg') no-repeat center 40% / cover;
+    opacity: 0.7; /* Semi-transparent effect */
+">
+    <h1 style="
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        color: #fff; 
+        font-size: 3rem; 
+        font-weight: bold; 
+        margin: 0; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    ">
+        Resume
+    </h1>
+</div>
 
-    <!-- Hero Section -->
-    <header class="text-white text-center py-5 bg-secondary">
-        <h1>My Resume</h1>
-    </header>
+    <!-- Resume Header -->
+    <div class="container">
+        <div class="resume-header">
+            <p>Highlighting my professional experience, education, skills, and achievements.</p>
+        </div>
+    </div>
 
     <!-- Main Content -->
-    <div class="container my-5">
-        <h2>Mission Statement</h2>
-        <p>My goal is to become a successful entrepreneur by applying innovative strategies and leveraging leadership, problem-solving, and business development skills.</p>
+    <div class="container">
+        <div class="section">
+            <h2>Mission Statement</h2>
+            <p>
+                I am a passionate, driven individual with a talent for leadership and innovation. 
+                I thrive in fast-paced environments and am committed to making a meaningful impact 
+                through hard work, creativity, and exceptional interpersonal skills. I specialize 
+                in business operations, customer engagement, and leveraging technology to achieve results.
+            </p>
+        </div>
 
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor of Science in Entrepreneurship - BYU</li>
-            <li>High School Diploma - Melbourne High School</li>
-        </ul>
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Brigham Young University</strong> – Marriott School of Business  
+                    <br><em>Bachelor’s Degree in Entrepreneurship (in progress)</em>
+                </li>
+                <li><strong>Eastern Florida State College</strong>  
+                    <br><em>Associate of Arts in Business Administration (2024)</em>
+                </li>
+                <li><strong>Melbourne High School</strong>  
+                    <br><em>High School Diploma (2024)</em>
+                </li>
+            </ul>
+        </div>
 
-        <h2>Experience</h2>
-        <ul>
-            <li>Manager - Swig</li>
-            <li>Manager - Crumbl</li>
-        </ul>
+        <div class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Manager – Swig at the Delta Center</strong> (2022–2024)
+                    <ul>
+                        <li>Managed two Swig locations, including the high-volume Delta Center store.</li>
+                        <li>Oversaw daily operations, staff scheduling, and inventory management.</li>
+                        <li>Trained and mentored employees, achieving high retention rates.</li>
+                    </ul>
+                </li>
+                <li><strong>Assistant Manager – Crumbl Cookies</strong> (2020–2022)
+                    <ul>
+                        <li>Helped open and operate four franchise locations with my father.</li>
+                        <li>Streamlined onboarding and ensured smooth operations across locations.</li>
+                        <li>Contributed to marketing strategies and customer engagement.</li>
+                    </ul>
+                </li>
+                <li><strong>Shift Lead/Manager – Airborne Trampoline Park</strong> (2018–2020)
+                    <ul>
+                        <li>Managed teams as a reliable shift lead for over 1.5 years.</li>
+                        <li>Ensured operational efficiency and resolved conflicts effectively.</li>
+                    </ul>
+                </li>
+                <li><strong>Operations Assistant – Poke Bowl and Boba Tea</strong> (2020–2021)
+                    <ul>
+                        <li>Assisted in opening a new location and managing daily operations.</li>
+                        <li>Provided marketing support to increase customer growth.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-        <h2>Skills</h2>
-        <ul>
-            <li>Microsoft Office</li>
-            <li>AI Tools (e.g., ChatGPT)</li>
-            <li>Leadership and Business Development</li>
-            <li>Project Management</li>
-        </ul>
+        <div class="section">
+            <h2>Key Skills</h2>
+            <ul>
+                <li>AI Proficiency: Mastery in using AI tools for content creation and data analysis.</li>
+                <li>Microsoft Office Suite: Expertise in Word, Excel, PowerPoint, and Outlook.</li>
+                <li>Photography & Marketing: Skilled in photography and promotional campaigns.</li>
+                <li>Leadership: Proven ability to mentor and lead diverse teams to success.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certifications & Achievements</h2>
+            <ul>
+                <li>Eagle Scout Award (2014): Earned at age 13, demonstrating leadership and service.</li>
+                <li>Dual Enrollment Graduate: Simultaneously graduated with a high school diploma and an associate degree.</li>
+                <li>Business Development Expertise: Played a critical role in launching and expanding businesses.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Photography: Capturing moments and creating visual stories.</li>
+                <li>Music: Exploring diverse genres and leveraging creativity through sound.</li>
+                <li>Marketing: Developing strategies to promote brands and products effectively.</li>
+                <li>Technology: Staying updated on the latest tools and trends in AI and business development.</li>
+            </ul>
+        </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-3 mt-5">
         <p>&copy; 2024 Kaden Clegg. All rights reserved.</p>
     </footer>
 </body>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Swift Lyric Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf0f5; /* Soft pink */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #b93e6b;
+            margin-top: 20px;
+        }
+
+        #lyric-container {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #6a1b9a;
+        }
+
+        button {
+            background-color: #b93e6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #9c27b0;
+        }
+
+        .nav-links {
+            margin-top: 30px;
+        }
+
+        .nav-links a {
+            color: #6a1b9a;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .nav-links a:hover {
+            color: #9c27b0;
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Taylor Swift Lyric Generator</h1>
+    <p>Click the button to reveal a random Taylor Swift lyric!</p>
+
+    <div id="lyric-container">"Ready for it? 🎶"</div>
+    <button onclick="generateLyric()">Get a Lyric</button>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="taylorswift.html">&larr; Back to Taylor Swift Page</a>    </div>
+
+    <footer>
+        <p>&copy; 2024 Taylor Swift Fan Page</p>
+    </footer>
+
+    <script>
+        const lyrics = [
+ "Fearless - 'You take my hand and drag me head first, fearless.'",
+"White Horse - 'I’m not a princess, this ain’t a fairytale.'",
+"You Belong With Me - 'If you could see that I’m the one who understands you.'",
+"Fifteen - 'In your life, you’ll do things greater than dating the boy on the football team.'",
+"Forever & Always - 'Was I out of line? Did I say something way too honest?'",
+
+"Love Story - 'Romeo, take me somewhere we can be alone.'",
+"Red - 'Loving him was like driving a new Maserati down a dead-end street.'",
+"I Knew You Were Trouble - 'I guess you didn’t care, and I guess I liked that.'",
+"All Too Well - 'Maybe we got lost in translation, maybe I asked for too much.'",
+"22 - 'It feels like a perfect night to dress up like hipsters.'",
+
+"Shake It Off - 'And the haters gonna hate, hate, hate, hate, hate.'",
+"Blank Space - 'Darling, I’m a nightmare dressed like a daydream.'",
+"Style - 'You got that James Dean daydream look in your eye.'",
+"Wildest Dreams - 'Say you’ll remember me standing in a nice dress.'",
+"Out of the Woods - 'Are we out of the woods yet? Are we in the clear yet?'",
+
+"Delicate - 'This ain’t for the best, my reputation’s never been worse.'",
+"Getaway Car - 'I wanted to leave him, I needed a reason.'",
+"Look What You Made Me Do - 'I don’t trust nobody and nobody trusts me.'",
+"Dancing With Our Hands Tied - 'I’m a mess, but I’m the mess that you wanted.'",
+"Call It What You Want - 'I want to wear his initial on a chain round my neck, chain round my neck.'",
+
+"Lover - 'Can I go where you go? Can we always be this close forever and ever?'",
+"Cruel Summer - 'I love you, ain’t that the worst thing you ever heard?'",
+"Paper Rings - 'I like shiny things, but I’d marry you with paper rings.'",
+"The Archer - 'Who could ever leave me, darling? But who could stay?'",
+
+"Cardigan - 'And when I felt like I was an old cardigan under someone’s bed, you put me on.'",
+"August - 'Remember when I pulled up and said get in the car.'",
+"Exile - 'I think I’ve seen this film before, and I didn’t like the ending.'",
+"Betty - 'You heard the rumors from Inez, you can’t believe a word she says.'",
+"The 1 - 'I guess you never know, never know, and if you wanted me, you really should’ve showed.'",
+
+"Willow - 'Life was a willow and it bent right to your wind.'",
+"Champagne Problems - 'One for the money, two for the show, I never was ready so I watch you go.'",
+"Tolerate It - 'I sit and watch you, I notice everything you do or don’t do.'",
+"Evermore - 'I had a feeling so peculiar that this pain would be for evermore.'",
+
+"Anti-Hero - 'It’s me, hi, I’m the problem, it’s me.'",
+"Bejeweled - 'I can still make the whole place shimmer.'",
+"Midnight Rain - 'He wanted a bride, I was making my own name.'",
+"Labyrinth - 'You know how much I hate that everybody just expects me to bounce back.'",
+
+"Dear John - 'Don’t you think I was too young to be messed with? The girl in the dress cried the whole way home.'",
+"Enchanted - 'This night is sparkling, don’t you let it go.'",
+"Last Kiss - 'All that I know is I don’t know how to be something you miss.'",
+"Haunted - 'You and I walk a fragile line, I have known it all this time.'",
+"Speak Now - 'I am not the kind of girl who should be rudely barging in on a white veil occasion.'",
+
+"Teardrops On My Guitar - 'He’s the reason for the teardrops on my guitar.'",
+"Picture To Burn - 'I hate that stupid old pickup truck you never let me drive.'",
+"Our Song - 'I was riding shotgun with my hair undone in the front seat of his car.'",
+"Tim McGraw - 'When you think Tim McGraw, I hope you think my favorite song.'",
+
+"Safe & Sound - 'Just close your eyes, the sun is going down.'",
+"Eyes Open - 'Everybody’s waiting for you to break down.'",
+
+"Mr. Perfectly Fine - 'Hello, Mr. Perfectly Fine, how’s your heart after breaking mine?'",
+"Nothing New - 'How can a person know everything at 18 but nothing at 22?'",
+
+"Gold Rush - 'I don’t like that falling feels like flying til the bone crush.'",
+"Dorothea - 'Hey, Dorothea, do you ever stop and think about me?'",
+"Long Story Short - 'It was the wrong guy, now I’m alright, I’m alright.'",
+
+"New Romantics - 'We’re all bored, we’re all so tired of everything.'",
+"Clean - 'The drought was the very worst, when the flowers that we’d grown together died of thirst.'",
+"Wonderland - 'We found wonderland, you and I got lost in it.'",
+
+"Only the Young - 'Only the young can run.'",
+"Change - 'You can walk away, say we don’t need this, but there’s something in your eyes.'",
+
+"Breathe - 'And we know it’s never simple, never easy, never a clean break.'",
+"The Way I Loved You - 'He’s charming and endearing and I’m comfortable.'",
+"Forever & Always - 'You looked me in the eye and told me you loved me.'",
+"Superman - 'I watch superman fly away.'",
+"The Other Side of the Door - 'All I need is on the other side of the door.'",
+
+"State of Grace - 'Love is a ruthless game unless you play it good and right.'",
+"Holy Ground - 'And right there where we stood was holy ground.'",
+"Starlight - 'Don’t you dream impossible things?'",
+"Sad Beautiful Tragic - 'Good girls, hopeful they’ll be, and long they will wait.'",
+"The Last Time - 'You wear your best apology but I was there to watch you leave.'",
+
+"Sparks Fly - 'Drop everything now, meet me in the pouring rain.'",
+"Innocent - 'It’s okay, life is a tough crowd.'",
+"Mean - 'Someday I’ll be living in a big ol’ city, and all you’re ever gonna be is mean.'",
+"Back to December - 'Maybe this is wishful thinking, probably mindless dreaming.'",
+
+        ];
+
+        function generateLyric() {
+            const randomIndex = Math.floor(Math.random() * lyrics.length);
+            document.getElementById("lyric-container").innerText = lyrics[randomIndex];
+        }
+    </script>
+</body>
+</html>

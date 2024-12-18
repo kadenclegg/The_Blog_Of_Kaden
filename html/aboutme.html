@@ -4,47 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Kaden Clegg</title>
-    <link rel="stylesheet" href="../styles/styles.css"> <!-- Bootstrap Theme -->
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        h1, h2, p {
+            text-align: center;
+            color: #333;
+        }
+        .about-section {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .about-section img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+        .qualities {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="../index.html">Kaden Clegg</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="aboutme.html">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tableau.html">Dashboard</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="text-white text-center py-5 bg-secondary">
-        <h1>About Me</h1>
-    </header>
+<!-- About Me Banner -->
+<div style="
+    position: relative; 
+    height: 400px; /* Increased height */
+    background: url('../images/IMG_2544.JPG') no-repeat center 30% / cover;
+    opacity: 0.7;
+">
+    <h1 style="
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        color: #fff; 
+        font-size: 3rem; 
+        font-weight: bold; 
+        margin: 0; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    ">
+        About Me
+    </h1>
+</div>
 
-    <!-- Main Content -->
-    <div class="container my-5">
-        <img src="../images/IMG_2544.JPG" class="rounded-circle mb-3 d-block mx-auto" width="150" alt="Profile Picture">
-        <p class="text-center">Hello! My name is <strong>Kaden Clegg</strong>. I’m currently studying <strong>Entrepreneurship</strong> at BYU. I enjoy leadership, teamwork, and building innovative solutions.</p>
 
-        <h3>Hobbies</h3>
-        <ul>
-            <li>Exploring new business strategies</li>
-            <li>Community service and leadership (Eagle Scout)</li>
-            <li>Microsoft Office and AI tools</li>
-            <li>Outdoor activities and team-building</li>
+<!-- About Me Paragraph -->
+<div class="container" style="margin-top: 20px;">
+<p style="text-align: center; font-size: 1.2rem; color: #333;">
+    Welcome to my world! I’m Kaden Clegg, a passionate, ambitious, and creative individual striving to make an impact 
+    in every endeavor I pursue. Whether it's leading a team, innovating with AI, or capturing life’s beauty through a 
+    camera lens, I believe in doing it with heart and determination.
+</p>
+</div>
+
+
+</div>
+
+    <!-- About Section -->
+    <div class="container about-section">
+        <h2>My Journey</h2>
+        <p>
+            Growing up, I always sought opportunities to lead, create, and excel. By the age of 13, I had already achieved my Eagle Scout award—a testament to my dedication and determination.
+            Since then, I’ve ventured into business management, entrepreneurship, and AI innovation.
+        </p>
+        <p>
+            From managing Swig locations at the Delta Center to helping open and operate Crumbl franchises and Poke Bowl stores, my professional journey has been as diverse as it has been fulfilling.
+            I am currently pursuing a degree in Entrepreneurship at BYU’s prestigious Marriott School of Business, where I continue to hone my skills and explore new opportunities.
+        </p>
+    </div>
+
+    <!-- Qualities Section -->
+    <div class="container about-section">
+        <h2>What Sets Me Apart</h2>
+        <ul class="qualities">
+            <li>Passionate about leadership and mentoring others.</li>
+            <li>Fluent in leveraging AI tools for problem-solving and efficiency.</li>
+            <li>Skilled in business operations, customer engagement, and marketing strategies.</li>
+            <li>Creative with a keen eye for photography and design.</li>
+            <li>Adaptable, resourceful, and always eager to learn.</li>
         </ul>
     </div>
 
+    <!-- Fun Facts Section -->
+    <div class="container about-section">
+        <h2>Fun Facts</h2>
+        <p>
+            I love exploring new places, diving into creative projects, and keeping up with the latest trends in tech and business.
+            In my free time, you’ll find me capturing scenic landscapes, jamming out to my favorite playlists, or brainstorming new ideas to bring to life.
+        </p>
+    </div>
+
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-3 mt-5">
         <p>&copy; 2024 Kaden Clegg. All rights reserved.</p>
     </footer>
 </body>
